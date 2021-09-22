@@ -4,6 +4,7 @@ import {Landing} from './components/Landing';
 import {TableOrders} from './components/TableOrders';
 import {KitchenOrders} from './components/KitchenOrders';
 import {PagenotFound} from './components/PagenotFound';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
  
 //import './App.css';
