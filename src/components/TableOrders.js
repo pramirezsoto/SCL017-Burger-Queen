@@ -2,7 +2,7 @@ import React from 'react';
 
 export const TableOrders = () => (
   <div>
-    <h2> HOLA PAULA DESDE LA MESA</h2>
+    <h2> Tabla de pedidos</h2>
   </div>
 
   )
