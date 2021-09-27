@@ -8,7 +8,8 @@ export const TableOrders = () => (
     <ul>
       {menu.map(food => {
         return (
-        <p>{food.id} {food.name} {food.price} {food.options} {food.image} </p>
+        <p>{food.id} {food.name} {food.price} {food.options}  {food.image}  </p>
+        
         )
       })}
     </ul>

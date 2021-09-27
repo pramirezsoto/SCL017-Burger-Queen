@@ -28,7 +28,7 @@ export const menu = [
         "category": "Desayuno",
         "name": "Jugo Stackoverflow natural",
         "price": 700,
-        "image": "https://imgur.com/XkACv2G",
+        "img": "https://imgur.com/XkACv2G",
         "options": [
             "piña",
             "naranja",
@@ -40,10 +40,10 @@ export const menu = [
         "category": "Almuerzo",
         "name": "Hamburguesa Data Simple",
         "price": 1000,
-        "image": "https://imgur.com/uRB1bCE",
+        "img": "https://imgur.com/uRB1bCE",
         "options": [
             "res" ,
-            "pollo" ,
+            "pollo",
             "vegetariana"
         ]
     },
@@ -52,7 +52,7 @@ export const menu = [
         "category": "Almuerzo",
         "name": "Hamburguesa Big Data Doble",
         "price": 1500,
-        "image": "https://imgur.com/rcxPPAx",
+        "img": "https://imgur.com/rcxPPAx",
         "options": [
             "res",
             "pollo",
@@ -64,7 +64,7 @@ export const menu = [
         "category": "Almuerzo",
         "name": "Potato Script",
         "price": 500,
-        "image": "https://imgur.com/VbxZJBj",
+        "img": "https://imgur.com/VbxZJBj",
         "options": []
     },
     {
@@ -72,7 +72,7 @@ export const menu = [
         "category": "Almuerzo",
         "name": "Loop de Cebolla",
         "price": 500,
-        "image": "https://imgur.com/COKfTNl",
+        "img": "https://imgur.com/COKfTNl",
         "options": []
     },
     {
@@ -80,7 +80,7 @@ export const menu = [
         "category": "Almuerzo",
         "name": "Agua.json",
         "price": 500,
-        "image": "https://imgur.com/bPzsarM",
+        "img": "https://imgur.com/bPzsarM",
         "options": [
             "500ml",
             "750ml"
@@ -91,7 +91,7 @@ export const menu = [
         "category": "Almuerzo",
         "name": "Bebida.js",
         "price": 700,
-        "image": "https://imgur.com/7x8aj9m",
+        "img": "https://imgur.com/7x8aj9m",
         "options": [
             "500ml",
             "750ml"
