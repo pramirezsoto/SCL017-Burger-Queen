@@ -1,9 +1,9 @@
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import {Landing} from './components/Landing';
-import {TableOrders} from './components/TableOrders';
-import {KitchenOrders} from './components/KitchenOrders';
-import {PagenotFound} from './components/PagenotFound';
+import {Landing} from './components/Landing.jsx';
+import {TableOrders} from './components/TableOrders.jsx';
+import {KitchenOrders} from './components/KitchenOrders.jsx';
+import {PagenotFound} from './components/PagenotFound.jsx';
 
 
  
@@ -15,7 +15,7 @@ function App() {
     <Router>
       <Switch>
           <Route exact path = "/" component = {Landing}/> 
-          <Route exact path = "/tableorders" component = {TableOrders}/>   
+          <Route exact path = "/tableorders" component = {TableOrders}/> 
           <Route exact path = "/kitchenorders" component = {KitchenOrders} /> 
           <Route component = {PagenotFound} />  
 
