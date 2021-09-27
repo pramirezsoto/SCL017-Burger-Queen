@@ -1,6 +1,6 @@
 @import url("http://fonts.cdnfonts.com/css/post-no-bills-colombo");
 
-.container-fluid {
+.container-fluid{
   background-color: #dd1438;
   display: flex;
   width: 100vw;
@@ -30,5 +30,5 @@
 
 .btn-outline-light {
   font-family: "Post No Bills Colombo ExtraBold", sans-serif;
-  height: 30%;
+  height: 30%; 
 }

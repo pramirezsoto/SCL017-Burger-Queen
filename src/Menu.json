@@ -1,0 +1,102 @@
+{
+    "menu": [
+        {
+            "id": 1,
+            "category": "Desayuno",
+            "name": "Café Java",
+            "price": 700,
+            "img": "https://imgur.com/O4JAk1P.png",
+            "options": []
+        },
+        {
+            "id": 2,
+            "category": "Desayuno",
+            "name": "Cafe Java con leche",
+            "price": 500,
+            "img": "https://imgur.com/uRB1bCE.png",
+            "options": []
+        },
+        {
+            "id": 3,
+            "category": "Desayuno",
+            "name": "Sandwich de Array",
+            "price": 1000,
+            "img": "https://imgur.com/jn2vH6v.png",
+            "options": []
+        },
+        {
+            "id": 4,
+            "category": "Desayuno",
+            "name": "Jugo Stackoverflow natural",
+            "price": 700,
+            "img": "https://imgur.com/XkACv2G..png",
+            "options": [
+                "piña",
+                "naranja",
+                "frutilla"
+            ]
+        },
+        {
+            "id": 5,
+            "category": "Almuerzo",
+            "name": "Hamburguesa Data Simple",
+            "price": 1000,
+            "img": "https://imgur.com/crIEKtJ.png",
+            "options": [
+                "res",
+                "pollo",
+                "vegetariana"
+            ]
+        },
+        {
+            "id": 6,
+            "category": "Almuerzo",
+            "name": "Hamburguesa Big Data Doble",
+            "price": 1500,
+            "img": "https://imgur.com/rcxPPAx.png",
+            "options": [
+                "res",
+                "pollo",
+                "vegetariana"
+            ]
+        },
+        {
+            "id": 7,
+            "category": "Almuerzo",
+            "name": "Potato Script",
+            "price": 500,
+            "img": "https://imgur.com/VbxZJBj.png",
+            "options": []
+        },
+        {
+            "id": 8,
+            "category": "Almuerzo",
+            "name": "Loop de Cebolla",
+            "price": 500,
+            "img": "https://imgur.com/COKfTNl.png",
+            "options": []
+        },
+        {
+            "id": 9,
+            "category": "Almuerzo",
+            "name": "Agua.json",
+            "price": 500,
+            "img": "https://i.imgur.com/bPzsarM.png",
+            "options": [
+                "500ml",
+                "750ml"
+            ]
+        },
+        {
+            "id": 10,
+            "category": "Almuerzo",
+            "name": "Bebida.js",
+            "price": 700,
+            "img": "https://imgur.com/7x8aj9m.png",
+            "options": [
+                "500ml",
+                "750ml"
+            ]
+        }
+    ]
+}

@@ -1,4 +1,4 @@
-export const menu = [
+/* export const menu = [
     {
         "id": 1,
         "category": "Desayuno",
@@ -99,4 +99,6 @@ export const menu = [
     }
 ]
 
-export default menu;
+export default menu; */
+
+//VER SI ESTA HOJA LA DEJAMOS, LA DIFERENCIA ESTA EN QUE UNO ES JSON Y EL OTRO JS

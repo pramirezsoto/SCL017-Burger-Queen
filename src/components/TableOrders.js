@@ -1,4 +1,4 @@
-import React from 'react';
+/* import React from 'react';
 import menu from '../Menu';
 
 export const TableOrders = () => (
@@ -15,4 +15,6 @@ export const TableOrders = () => (
     </ul>
   </div>
   </div>
-)
+) */
+
+//REVISAR ESTA HOJA PARA VER SI LA OCUPAMOS 

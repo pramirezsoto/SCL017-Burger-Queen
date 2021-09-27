@@ -1,0 +1,90 @@
+/* Container completo de la vista de menu y resumen de pedido en Tableorders*/
+@import url("http://fonts.cdnfonts.com/css/post-no-bills-colombo");
+
+
+.containerMenuandBill{
+  display: flex;
+  height: 100vh;
+
+}
+
+.containerMenu{
+    position: relative;
+    width: 50%;
+    margin: 10%;
+    background-color: #e5e5e5;
+    width: fit-content;
+    height: fit-content;
+    border-radius: 20px;
+}
+ .menu{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  justify-content: center;
+  column-gap: 3rem;
+  padding: 20px;
+  }
+
+
+.cardMenu{
+    display: flex;
+    width: 15rem;
+    margin: 10% 25%;
+    background: #ffff;
+    border-radius: 20px;
+    cursor: pointer;
+    flex-direction: column;
+
+}
+.card-body{
+  text-align: center;
+  font-family:"Post No Bills Colombo ExtraBold", sans-serif;
+    
+}
+.card-title{
+    font-size: 150%;
+}
+.card-price{
+    font-size: 150%;
+    font-family: "Post No Bills Colombo ExtraBold", sans-serif;
+    
+}
+
+.titleFood{
+  text-align: center;
+  font-family: "Post No Bills Colombo ExtraBold", sans-serif;
+  
+}
+
+.card-img-top{
+  border-radius: 20px 20px 0px 0px;
+}
+
+.nameMenu{
+  background-color: #c4c4c4;
+  height: 3rem;
+  border-radius: 20px 20px 0px 0px;
+}
+
+.billContainer{
+  
+    width: 35%;
+    height: 50%;
+    
+    background-color: #e5e5e5;    
+    border-radius: 20px;
+    margin: 10rem;
+    
+     }
+
+
+.containerBill{
+  justify-content: center;
+  display: flex;
+  width: 100%;
+  
+  
+}
+
+
