@@ -39,7 +39,7 @@
             "category": "Almuerzo",
             "name": "Hamburguesa Data Simple",
             "price": 1000,
-            "img": "https://i.imgur.com/H6xgCgQ.jpg",
+            "img": "https://i.imgur.com/UDZhBq4.jpg",
             "options": [
                 "res",
                 "pollo",
@@ -79,7 +79,7 @@
             "category": "Almuerzo",
             "name": "Agua.json",
             "price": 500,
-            "img": "https://i.imgur.com/Z9qFtab.jpg",
+            "img": "https://i.imgur.com/BcNICRz.jpg",
             "options": [
                 "500ml",
                 "750ml"

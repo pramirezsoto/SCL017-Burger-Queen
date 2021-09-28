@@ -1,4 +1,4 @@
-
+import Button from "@restart/ui/esm/Button";
 
 export const Ordersummary = () => {
     
@@ -13,7 +13,7 @@ export const Ordersummary = () => {
               Aquí va el listado del pedido
             </div>
             <div className= 'sendtoKitchen'>
-            <button className = 'btn-light'> ENVIAR A COCINA </button>
+            <Button  className="botoncocina" variant="warning">Enviar a cocina</Button>{' '}
             </div>
         </div>
         
