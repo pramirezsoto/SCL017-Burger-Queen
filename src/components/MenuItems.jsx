@@ -1,21 +1,31 @@
-import React, { Fragment } from 'react';
+import {React , useState}  from 'react';
 import data from '../menu.json';
+import Button from '@restart/ui/esm/Button';
 
 
 export const MenuItems = () => {
 
-     const dataMenu = data.menu;
-    console.log(dataMenu)   
+     const dataDesayuno = data.desayuno //<data className="desayuno"></data>;//
+    console.log(dataDesayuno) 
+    
+    const [dataActual, setDataActual] = useState(data.desayuno);
+
+    const mostrarAlmuerzo = () => {
+      setDataActual(data.almuerzo)
+    }
+
+    const mostrarDesayuno = () => {
+      setDataActual(dataDesayuno)
+    }
   
   return (
     
     <div className="menuContainer">
       <div className="nameMenu">
-        <h2 className='titleFood'>Comida</h2>
-        
+        <h2 className='titleFood'> <Button onClick={mostrarDesayuno} variant="light">DESAYUNO</Button> <Button onClick={mostrarAlmuerzo} variant="dark">ALMUERZO</Button>{' '}</h2>
       </div>
       <div className="menu">
-        {dataMenu.map((product) => (
+        {dataActual.map((product) => (
           <div key={product.id} className="cardMenu ">
             <img src={product.img} className="card-img-top" alt="..."/>
             <div className ="card-body">

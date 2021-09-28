@@ -1,24 +1,21 @@
 {
-    "menu": [
+    "desayuno": [
         {
             "id": 1,
-            "category": "Desayuno",
             "name": "Café Java",
             "price": 700,
-            "img": "https://imgur.com/O4JAk1P.png",
+            "img": "https://i.imgur.com/AuVbBuG.jpg",
             "options": []
         },
         {
             "id": 2,
-            "category": "Desayuno",
             "name": "Cafe Java con leche",
             "price": 500,
-            "img": "https://imgur.com/uRB1bCE.png",
+            "img": "https://i.imgur.com/p1GEw48.jpg",
             "options": []
         },
         {
             "id": 3,
-            "category": "Desayuno",
             "name": "Sandwich de Array",
             "price": 1000,
             "img": "https://imgur.com/jn2vH6v.png",
@@ -26,22 +23,23 @@
         },
         {
             "id": 4,
-            "category": "Desayuno",
             "name": "Jugo Stackoverflow natural",
             "price": 700,
-            "img": "https://imgur.com/XkACv2G..png",
+            "img": "https://i.imgur.com/rjjBr98.jpg",
             "options": [
                 "piña",
                 "naranja",
                 "frutilla"
             ]
-        },
+        }
+    ],
+    "almuerzo": [
         {
             "id": 5,
             "category": "Almuerzo",
             "name": "Hamburguesa Data Simple",
             "price": 1000,
-            "img": "https://imgur.com/crIEKtJ.png",
+            "img": "https://i.imgur.com/H6xgCgQ.jpg",
             "options": [
                 "res",
                 "pollo",
@@ -65,7 +63,7 @@
             "category": "Almuerzo",
             "name": "Potato Script",
             "price": 500,
-            "img": "https://imgur.com/VbxZJBj.png",
+            "img": "https://i.imgur.com/gRBJI1G.jpg",
             "options": []
         },
         {
@@ -81,7 +79,7 @@
             "category": "Almuerzo",
             "name": "Agua.json",
             "price": 500,
-            "img": "https://i.imgur.com/bPzsarM.png",
+            "img": "https://i.imgur.com/Z9qFtab.jpg",
             "options": [
                 "500ml",
                 "750ml"
