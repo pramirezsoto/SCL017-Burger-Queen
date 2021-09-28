@@ -1,11 +1,11 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import data from '../menu.json';
 
 
 export const MenuItems = () => {
 
      const dataMenu = data.menu;
-    console.log(dataMenu)   
+    console.log(dataMenu);
   
   return (
     
@@ -21,6 +21,7 @@ export const MenuItems = () => {
             <div className ="card-body">
               <h5 className ="card-title">{product.name}</h5>
               <p className ="card-price">${product.price}</p>
+              
             </div>
         </div>
         ))
