@@ -1,90 +1,150 @@
 /* Container completo de la vista de menu y resumen de pedido en Tableorders*/
 @import url("http://fonts.cdnfonts.com/css/post-no-bills-colombo");
 
-
-.containerMenuandBill{
+.containerMenuandBill {
   display: flex;
   height: 100vh;
-
+  align-items: stretch;
 }
 
-.containerMenu{
-    position: relative;
-    width: 50%;
-    margin: 10%;
-    background-color: #e5e5e5;
-    width: fit-content;
-    height: fit-content;
-    border-radius: 20px;
+.containerMenu {
+  position: relative;
+  width: 50%;
+  margin: 10%;
+  background-color: #e5e5e5;
+  width: fit-content;
+  height: fit-content;
+  border-radius: 20px;
+  
 }
- .menu{
+.menu {
   display: grid;
   grid-template-columns: 1fr 1fr;
   justify-items: center;
   justify-content: center;
   column-gap: 3rem;
   padding: 20px;
-  }
-
-
-.cardMenu{
-    display: flex;
-    width: 15rem;
-    margin: 10% 25%;
-    background: #ffff;
-    border-radius: 20px;
-    cursor: pointer;
-    flex-direction: column;
-
-}
-.card-body{
-  text-align: center;
-  font-family:"Post No Bills Colombo ExtraBold", sans-serif;
-    
-}
-.card-title{
-    font-size: 150%;
-}
-.card-price{
-    font-size: 150%;
-    font-family: "Post No Bills Colombo ExtraBold", sans-serif;
-    
 }
 
-.titleFood{
+.cardMenu {
+  display: flex;
+  width: 15rem;
+  margin: 10% 25%;
+  background: #ffff;
+  border-radius: 20px;
+  cursor: pointer;
+  flex-direction: column;
+}
+.card-body {
   text-align: center;
   font-family: "Post No Bills Colombo ExtraBold", sans-serif;
-  
+}
+.card-title {
+  font-size: 150%;
+}
+.card-price {
+  font-size: 150%;
+  font-family: "Post No Bills Colombo ExtraBold", sans-serif;
 }
 
-.card-img-top{
+.titleFood {
+  text-align: center;
+  font-family: "Post No Bills Colombo ExtraBold", sans-serif;
+}
+.botoncocina {
+  text-align: center;
+  font-family: "Post No Bills Colombo ExtraBold", sans-serif;
+  color: crimson;
+}
+.card-img-top {
   border-radius: 20px 20px 0px 0px;
 }
 
-.nameMenu{
+.nameMenu {
   background-color: #c4c4c4;
   height: 3rem;
   border-radius: 20px 20px 0px 0px;
 }
 
-.billContainer{
-  
-    width: 35%;
-    height: 50%;
-    
-    background-color: #e5e5e5;    
-    border-radius: 20px;
-    margin: 10rem;
-    
-     }
-
-
-.containerBill{
-  justify-content: center;
-  display: flex;
+.containerBill {
   width: 100%;
+  display: flex;
   
   
 }
 
+.billContainer {
+  width: 80%;
+  height: 30%;
+  background-color: #e5e5e5;
+  border-radius: 20px;
+  position: relative;
+  top: 20%;
+}
 
+.billTitleContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  font-family: "Post No Bills Colombo ExtraBold", sans-serif;
+  background-color: #dd1438;
+  height: 3rem;
+  border-radius: 20px 20px 0px 0px;
+  
+}
+
+.billTitle {
+  position: relative;
+  top: 10%;
+  border-radius: 20px;
+  font-size: 2rem;
+  background-color: white;
+  width: 60%;
+  
+}
+
+.orderContainer{
+  height: 100%;
+  font-family: "Post No Bills Colombo ExtraBold", sans-serif;
+}
+.sendtoKitchen{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.botoncocina{
+  border-radius: 20px;
+  font-size: 2rem;
+  border: 5px solid #fae33f;
+  background-color: white;
+  width: 60%;
+}
+.botoncocina:hover{
+background-color: #fae33f;
+}
+
+.takeAnotherOrder{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  position: relative;
+  top:20%;
+}
+
+.botonTomarotraOrden{
+  border-radius: 20px;
+  font-size: 2rem;
+  border: 5px solid #fae33f;
+  background-color: white;
+  font-family: "Post No Bills Colombo ExtraBold", sans-serif;
+  width: 60%;
+}
+
+.botonTomarotraOrden:hover{
+background-color: #dd1438;
+color: white;
+}

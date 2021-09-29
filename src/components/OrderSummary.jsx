@@ -1,4 +1,4 @@
-
+import Button from "@restart/ui/esm/Button";
 
 export const Ordersummary = () => {
     
@@ -6,14 +6,17 @@ export const Ordersummary = () => {
 
         <div className = 'billContainer'> 
         <div className='billTitleContainer'>
-            <h1 className= 'billTitle'> RESUMEN DEL PEDIDO </h1>  
+            <h1 className= 'billTitle'> Resumen del pedido </h1>  
             </div>   
            
             <div className= 'orderContainer'>
               Aquí va el listado del pedido
             </div>
             <div className= 'sendtoKitchen'>
-            <button className = 'btn-light'> ENVIAR A COCINA </button>
+            <Button className="botoncocina" variant="warning">Enviar a cocina</Button>{' '}
+            </div>
+            < div className='takeAnotherOrder'>
+            <Button className="botonTomarotraOrden" variant="warning">Tomar otro pedido</Button>{' '}
             </div>
         </div>
         
