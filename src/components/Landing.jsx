@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import "../components/landing.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 
-export const Landing = () => {
+const Landing = () => {
   return (
     <Fragment>
       <div className="container-fluid">
@@ -21,5 +21,7 @@ export const Landing = () => {
     </Fragment>
   );
 };
+
+export default Landing; 
 
 

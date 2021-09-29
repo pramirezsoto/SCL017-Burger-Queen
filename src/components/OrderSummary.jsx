@@ -1,6 +1,6 @@
 import Button from "@restart/ui/esm/Button";
 
-export const Ordersummary = () => {
+const Ordersummary = () => {
     
     return (
 
@@ -22,3 +22,5 @@ export const Ordersummary = () => {
         
     );
 };
+
+export default Ordersummary;

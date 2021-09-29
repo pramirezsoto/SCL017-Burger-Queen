@@ -1,22 +1,18 @@
 import React, { Fragment } from "react";
-import { MenuItems } from "./MenuItems";
-import { Ordersummary } from "./OrderSummary";
+import MenuItems  from "./MenuItems";
+import  Ordersummary  from "./OrderSummary";
 import './tableOrders.css';
 
-export const TableOrders = () => {
+const TableOrders = ({data}) => {
   
 return (
 <Fragment>
   <div className= "containerMenuandBill">
   <div className="containerMenu">
-    <MenuItems/>
+    <MenuItems data={data}/>
   </div>  
   <div className="containerBill">
-    <Ordersummary/>
-
-
-
-    
+    <Ordersummary data={data}/>    
   </div>
 
   </div>
@@ -25,6 +21,8 @@ return (
 )
 
 }
+
+export default TableOrders;
 
 
 
