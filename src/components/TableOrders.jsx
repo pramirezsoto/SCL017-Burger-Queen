@@ -13,7 +13,7 @@ function TableOrders() {
     if (exist) {
       setBillItems(
         billItems.map((x) =>
-          x.id === products.id ? { ...exist, qty: exist.qty + 1 } : x
+          x.id === product.id ? { ...exist, qty: exist.qty + 1 } : x
         )
       );
     } else {
@@ -22,13 +22,13 @@ function TableOrders() {
   };
   const onRemove = (product) => {
     // Función para remover del resumen del pedido
-    const exist = billItems.find((x) => x.id === products.id);
+    const exist = billItems.find((x) => x.id === product.id);
     if (exist.qty === 1) {
-      setBillItems(billItems.filter((x) => x.id !== products.id));
+      setBillItems(billItems.filter((x) => x.id !== product.id));
     } else {
       setBillItems(
         billItems.map((x) =>
-          x.id === products.id ? { ...exist, qty: exist.qty - 1 } : x
+          x.id === product.id ? { ...exist, qty: exist.qty - 1 } : x
         )
       );
     }
