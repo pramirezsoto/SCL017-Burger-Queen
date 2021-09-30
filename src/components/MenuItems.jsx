@@ -1,16 +1,13 @@
 import { React, useState } from "react";
 import Button from "@restart/ui/esm/Button";
-import MenuOptions from "./MenuOptions";
+import data from '../menu.json'
 
 export default function MenuItems (props) {
-
+  console.log(props);
   const {product, onAdd} = props;
+ 
 
-  //No puedo saber si funciona lo que hice porque las vistas interrumpen los props, las comenté mientras y las llevé a otra hoja pero no las lee de todas maneras. 
-  //Hay que ver cuál es la forma correcta de llamar a Mostrardesayuno y mostrarAlmuerzo
-  //Recién podremos ver si algo funcionó después de ver el tema de las vistas. 
-
- /*  const dataDesayuno = data.desayuno;
+  const dataDesayuno = data.desayuno;
   console.log(dataDesayuno);
 
   const [dataActual, setDataActual] = useState(data.desayuno);
@@ -21,7 +18,7 @@ export default function MenuItems (props) {
 
   const mostrarDesayuno = () => {
     setDataActual(dataDesayuno);
-  }; */
+  }; 
 
   return (
     <div className="menuContainer">

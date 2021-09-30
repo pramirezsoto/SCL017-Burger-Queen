@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import data from "../Menu.json";
+import data from "../menu.json";
 import MenuItems from "./MenuItems";
 import Ordersummary from "./OrderSummary";
 import "./tableOrders.css";
