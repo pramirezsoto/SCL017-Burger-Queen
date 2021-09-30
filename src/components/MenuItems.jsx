@@ -42,7 +42,7 @@ const MenuItems = ({ data, addToOrderSummary }) => {
               <h5 className="card-title">{product.name}</h5>
               <p className="card-price">${product.price}</p>
 
-              {/*{product.map((product, index) => {
+              {/*product.map((product, index) => {
                 return (
                   <div key={index}>
                     <p>{product.name}</p>

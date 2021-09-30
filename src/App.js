@@ -1,10 +1,10 @@
 
 import {BrowserRouter as Router, Route, Switch} from 'react-router-dom';
-import React, {useState} from 'react';
+import React from 'react';
 import Landing from './components/Landing.jsx';
 import TableOrders from './components/TableOrders.jsx';
 import KitchenOrders from './components/KitchenOrders.jsx';
-import data from './Menu.json';
+import data from './menu.json';
  
 //import './App.css';
 
