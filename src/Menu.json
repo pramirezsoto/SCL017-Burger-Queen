@@ -25,12 +25,8 @@
             "id": 4,
             "name": "Jugo Stackoverflow natural",
             "price": 700,
-            "img": "https://i.imgur.com/rjjBr98.jpg",
-            "options": [
-                "piña",
-                "naranja",
-                "frutilla"
-            ]
+            "img": "https://i.imgur.com/rjjBr98.jpg"
+         
         }
     ],
     "almuerzo": [
@@ -39,40 +35,68 @@
             "category": "Almuerzo",
             "name": "Hamburguesa Data Simple",
             "price": 1000,
-            "img": "https://i.imgur.com/UDZhBq4.jpg",
-            "options": [
-                "res",
-                "pollo",
-                "vegetariana"
-            ]
+            "img": "https://i.imgur.com/UDZhBq4.jpg"
+          
         },
         {
             "id": 6,
             "category": "Almuerzo",
             "name": "Hamburguesa Big Data Doble",
             "price": 1500,
-            "img": "https://imgur.com/rcxPPAx.png",
-            "options": [
-                "res",
-                "pollo",
-                "vegetariana"
-            ]
+            "img": "https://imgur.com/rcxPPAx.png"
+         
         },
+
+        {
+            "id": 6,
+            "category": "Almuerzo",
+            "name": "Hamburguesa Data de Pollo",
+            "price": 1500,
+            "img": "https://i.imgur.com/mGvVW5s.jpg"
+         
+        },
+
+        {
+            "id": 6,
+            "category": "Almuerzo",
+            "name": "Hamburguesa Data de Quinoa",
+            "price": 1500,
+            "img": "https://i.imgur.com/okCnoVu.jpg"
+         
+        },
+
+        {
+            "id": 11,
+            "name": "Huevo", 
+            "category": "Extras", 
+            "price": 10, 
+            "img": "https://i.imgur.com/SSQeuIN.jpg"
+        },
+
+        {
+            "id": 12,
+            "name": "Queso", 
+            "category": "Extras", 
+            "price": 10, 
+            "img": "https://i.imgur.com/KnNFd5h.jpg"
+        },
+        
+        
         {
             "id": 7,
             "category": "Almuerzo",
             "name": "Potato Script",
             "price": 500,
-            "img": "https://i.imgur.com/gRBJI1G.jpg",
-            "options": []
+            "img": "https://i.imgur.com/gRBJI1G.jpg"
+           
         },
         {
             "id": 8,
             "category": "Almuerzo",
             "name": "Loop de Cebolla",
             "price": 500,
-            "img": "https://imgur.com/COKfTNl.png",
-            "options": []
+            "img": "https://imgur.com/COKfTNl.png"
+           
         },
         {
             "id": 9,
@@ -96,5 +120,9 @@
                 "750ml"
             ]
         }
+
+      
+       
+        
     ]
 }
