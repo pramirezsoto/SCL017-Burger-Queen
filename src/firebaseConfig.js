@@ -1,5 +1,10 @@
+
 import firebase from 'firebase/app';
 import 'firebase/firestore';
+
+
+// TODO: Add SDKs for Firebase products that you want to use
+// https://firebase.google.com/docs/web/setup#available-libraries
 
 const firebaseConfig = {
   apiKey: "AIzaSyBG0R28qqwiLsPFmzxVZd1NWmp1SPFlMCw",
@@ -12,6 +17,17 @@ const firebaseConfig = {
 };
 
 // Initialize Firebase
-const fb = firebase.initializeApp(firebaseConfig);
+firebase.initializeApp(firebaseConfig);
 
-export const db = fb.firestore();
+export {firebase};
+
+const db = firebase.firestore();
+
+
+
+export function savingDataFirebase(billItems){
+  db.collection('pedidos').add({
+    pedidos: billItems,
+    
+  });
+}

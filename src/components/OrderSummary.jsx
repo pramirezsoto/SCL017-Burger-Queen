@@ -1,12 +1,20 @@
 import Button from "@restart/ui/esm/Button";
 import React from "react";
-
+import {savingDataFirebase} from '../firebaseConfig';
+import './TableOrders';
 
 export default function Ordersummary(props){
-    const {billItems, onAdd, onRemove} = props; 
+    const {billItems, onAdd, onRemove, resetOrder} = props; 
     const itemsPrice = billItems.reduce((a,c)=> a+c.price*c.qty,0);
     const taxPrice = itemsPrice*0.10;
-    const totalPrice = itemsPrice + taxPrice;
+    /* const getDate = () => {
+        const hoy = new Date();
+        const fecha = `${hoy.getDate()} - ${(hoy.getMonth() + 1)} - ${hoy.getFullYear()}`;
+        const hora = `${hoy.getHours()}:${hoy.getMinutes()}:${hoy.getSeconds()}`;
+        const fechaYHora = `${fecha} ${hora}`;
+        return fechaYHora;
+      }; */
+    const totalPrice = itemsPrice + taxPrice;   
 
 
    return (
@@ -31,22 +39,24 @@ export default function Ordersummary(props){
         <>
         <hr></hr>
         <div className= 'row'>
-            <div>Items price</div>
+            <div>Precio del producto</div>
             <div> $ {itemsPrice.toFixed(2)} </div>
         </div>
         <div className= 'row'>
-            <div>Tax price</div>
+            <div>Impuesto</div>
             <div> $ {taxPrice.toFixed(2)} </div>
         </div>
         <div className= 'row'>
-            <div>Total price</div>
+            <div>Total</div>
             <div> $ {totalPrice.toFixed(2)} </div>
         </div>
 
         </>
     )}
       <div className= 'sendtoKitchen'>
-            <Button className="botoncocina" variant="warning">Enviar a cocina</Button>{' '}
+            <Button onClick={()=>savingDataFirebase(billItems)}  className="botoncocina"  variant="warning">Enviar a cocina</Button>{' '}
+            {console.log(billItems)};
+            <Button onClick={()=>resetOrder()} className="botonReset" variant="warning">Tomar otro pedido</Button>{' '}
             </div>
 
 

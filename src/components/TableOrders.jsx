@@ -34,6 +34,12 @@ function TableOrders() {
     }
   };
 
+  const [dataActual, setDataActual] = useState(data.desayuno);
+  const resetOrder = () => {
+    setBillItems([]);
+    setDataActual(data.desayuno);
+  };
+
   return (
     <Fragment>
       <div className="containerMenuandBill">
@@ -46,6 +52,7 @@ function TableOrders() {
             billItems={billItems}
             onAdd={onAdd}
             onRemove={onRemove}
+            resetOrder={resetOrder}
           />
         </div>
       </div>
