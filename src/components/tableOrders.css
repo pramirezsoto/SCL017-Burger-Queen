@@ -101,7 +101,7 @@
   border-radius: 50px;
   font-size: 2rem;
   background-color: white;
-  width: 60%;
+  
   
 }
 
@@ -128,19 +128,12 @@
 background-color: #fae33f;
 }
 
-.takeAnotherOrder{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
-  align-items: center;
-  position: relative;
-  top:20%;
-}
 
 .add{
 width:20%;
 background-color: #dd1438;
 border-radius: 50px;
+
 
 }
 
@@ -150,5 +143,7 @@ border-radius: 50px;
  border-radius:50px;
 }
 
-
-
+.row{
+  display: flex;
+  justify-content: center;
+}
