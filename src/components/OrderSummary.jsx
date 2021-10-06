@@ -1,5 +1,8 @@
 import Button from "@restart/ui/esm/Button";
 import React from "react";
+import Row  from "react-bootstrap/Row";
+import Container  from "react-bootstrap/Container";
+import  Col from "react-bootstrap/Col";
 
 
 export default function Ordersummary(props){
@@ -10,22 +13,25 @@ export default function Ordersummary(props){
 
 
    return (
-
-        <div className = 'billContainer'> 
-        <div className='billTitleContainer'>
-            <h1 className= 'billTitle'> RESUMEN DEL PEDIDO </h1>  
+       <Container>
+        <Row>
+        <Col  xs={4}></Col>
+    
+        <div className = 'billContainer'>  
+        <div className='billTitleContainer'> 
+        
+            <h1 className= 'billTitle'  xs={2}> RESUMEN DEL PEDIDO </h1>  
             </div>   
-          
            
-           <div className= 'orderContainer'>{billItems.length === 0 && <div>Agrega productos al resumen del pedido</div>}</div>
-    {billItems.map((product)=>(
+            <div className= 'orderContainer'>{billItems.length === 0 && <div>Agrega productos al resumen del pedido</div>}</div>
+        {billItems.map((product)=>(
         <div key={product.id} className='row'>
             <div>{product.name} </div>
             <Button onClick={()=>onAdd(product)} className='add'>+</Button>
             <Button onClick={()=>onRemove(product)} className='remove'>-</Button>
 
         <div>{product.qty} x ${product.price.toFixed(2)} </div>
-        </div>
+        </div> 
     ))}
     {billItems.length !== 0 && (
         <>
@@ -51,7 +57,8 @@ export default function Ordersummary(props){
 
 
     </div>
-   
+    </Row> 
+</Container>
     )
     };
 
