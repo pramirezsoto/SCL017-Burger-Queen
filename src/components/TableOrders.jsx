@@ -3,9 +3,7 @@ import data from "../menu.json";
 import MenuItems from "./MenuItems";
 import Ordersummary from "./OrderSummary";
 import "./tableOrders.css";
-import  Container  from "react-bootstrap/Container";
-import  Row  from "react-bootstrap/Row";
-import  Col  from "react-bootstrap/Col";
+import  {Container, Row, Col} from 'react-bootstrap';
 
 function TableOrders() {
   const { products } = data;
