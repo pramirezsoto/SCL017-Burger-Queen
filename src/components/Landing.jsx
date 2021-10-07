@@ -1,12 +1,13 @@
 import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
-import "../components/landing.css";
-import "bootstrap/dist/css/bootstrap.min.css";
+/* import "../components/landing.css";
+import "bootstrap/dist/css/bootstrap.min.css"; */
+import { Row, Col, Container } from 'react-bootstrap';
 
 const Landing = () => {
   return (
     <Fragment>
-      <div className="container-fluid">
+      <Container>
             <div className ="logoContainer">
             <img src={"https://i.imgur.com/IZxCXAF.png"} alt="variablehamburguesa" className="logo" />
             </div>
@@ -17,7 +18,7 @@ const Landing = () => {
             <Link className="btn btn-outline-light btn-lg" role="button" to="/kitchenorders" > {""} Cocina </Link>
             </div>
             
-      </div>
+      </Container>
     </Fragment>
   );
 };
