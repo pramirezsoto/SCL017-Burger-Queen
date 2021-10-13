@@ -14,13 +14,12 @@ const Landing = () => {
             <img src={"https://i.imgur.com/IZxCXAF.png"} alt="variablehamburguesa" className="logo" />
             </Col>
 
-            <Col className="buttonContainer">
-          <Row>
-            
-            <Link className="btn btn-outline-light btn-lg" role="button" to="/tableorders"> {" "} Mesero </Link>
+            <Col  className="buttonContainer">
+          <Row  >
+           <Link className="btn btn-outline-light btn-md" role="button" to="/tableorders"> {" "} Mesero </Link>
             </Row>
             <Row>
-            <Link className="btn btn-outline-light btn-lg" role="button" to="/kitchenorders" > {""} Cocina </Link>
+            <Link className="btn btn-outline-light btn-md" role="button" to="/kitchenorders" > {""} Cocina </Link>
             </Row>
             </Col>
 

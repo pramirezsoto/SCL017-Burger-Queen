@@ -46,24 +46,26 @@ function TableOrders() {
   return (
     <Fragment>
       <Container>
-      <Row>
-        <Col  xs={6}></Col>
-      <div className="containerMenuandBill"  >
-        <div className="containerMenu"  >
-          <MenuItems products={data} onAdd={onAdd} />
-        </div>
-        <div className="containerBill" >
-          <Ordersummary
-            products={data}
-            billItems={billItems}
-            onAdd={onAdd}
-            onRemove={onRemove}
-            resetOrder={resetOrder}
-          />
-        </div>
-      </div>
-        
-      </Row>
+        <Row>
+          <Col md={12} lg={8}>
+            <Row className="containerMenu"  >
+              <MenuItems products={data} onAdd={onAdd} />
+            </Row>
+          </Col>
+          <Col md={12} lg={4} >
+            <Row>
+              <Ordersummary
+                products={data}
+                billItems={billItems}
+                onAdd={onAdd}
+                onRemove={onRemove}
+                resetOrder={resetOrder}
+              />
+            </Row>
+          </Col>
+    
+       
+        </Row>
       </Container>
     </Fragment>
   );

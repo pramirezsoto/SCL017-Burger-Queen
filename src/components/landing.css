@@ -2,11 +2,9 @@
 
 .container-fluid{
   background-color: #dd1438;
-  display: flex;
   width: 100vw;
   height: 100vh;
-  flex-direction: row;
-  flex-wrap: nowrap;
+ 
   align-items: center;
   justify-content: center;
 }
@@ -22,13 +20,13 @@
 }
 
 .buttonContainer {
-  display: flex;
-  flex-direction: column;
-  width: 20%;
+ /* display: flex;
+  flex-direction: column;*/
+  width: 100%;
   gap: 2em;
 }
 
 .btn-outline-light {
   font-family: "Post No Bills Colombo ExtraBold", sans-serif;
-  height: 30%; 
+ 
 }
