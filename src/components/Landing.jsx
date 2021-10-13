@@ -2,13 +2,14 @@ import React, { Fragment } from "react";
 import { Link } from "react-router-dom";
 import "../components/landing.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import { Row, Col, Container } from "react-bootstrap";
+import { Row, Col, Container, Button } from "react-bootstrap";
 
+//Elementos del Landing Page
 const Landing = () => {
   return (
     <Fragment>
       <Container fluid>
-        <Row className= 'justify-content-md-center'>
+        <Row className="justify-content-md-center">
           <Col className="logoContainer">
             <img
               src={"https://i.imgur.com/IZxCXAF.png"}
@@ -16,22 +17,21 @@ const Landing = () => {
               className="logo"
             />
           </Col>
-          <Col  className='buttonContainer'>
-            <Row className='btn'>
+          <Col className="buttonContainer">
+            <Row className="btn">
               <Link
                 className="btn btn-outline-light btn-lg"
                 role="button"
                 to="/tableorders"
               >
-                {" "}
-                Mesero{" "}
+                {" "}Mesero{" "}
               </Link>
             </Row>
-            <Row className='btn'>
+            <Row className="btn">
               <Link
                 className="btn btn-outline-light btn-lg"
                 role="button"
-                to="/kitchenorders"
+                to="/kitchenorders" 
               >
                 {" "}
                 {""} Cocina{" "}

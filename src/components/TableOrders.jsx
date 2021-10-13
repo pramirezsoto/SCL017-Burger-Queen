@@ -3,13 +3,14 @@ import data from "../menu.json";
 import MenuItems from "./MenuItems";
 import Ordersummary from "./OrderSummary";
 import "./tableOrders.css";
-import  {Container, Row, Col} from 'react-bootstrap';
+import { Container, Row, Col } from "react-bootstrap";
 
 function TableOrders() {
   const { products } = data;
   const [billItems, setBillItems] = useState([]);
+
+  //Función para sumar productos
   const onAdd = (product) => {
-    //Función para sumar del resumen del pedido
     const exist = billItems.find((x) => x.id === product.id);
     if (exist) {
       setBillItems(
@@ -21,8 +22,8 @@ function TableOrders() {
       setBillItems([...billItems, { ...product, qty: 1 }]);
     }
   };
+  // Función para remover productos
   const onRemove = (product) => {
-    // Función para remover del resumen del pedido
     const exist = billItems.find((x) => x.id === product.id);
     if (exist.qty === 1) {
       setBillItems(billItems.filter((x) => x.id !== product.id));
@@ -35,22 +36,23 @@ function TableOrders() {
     }
   };
 
+  //Función para dejar en blanco OrderSummary y tomar otro pedido
   const [dataActual, setDataActual] = useState(data.desayuno);
   const resetOrder = () => {
     setBillItems([]);
     setDataActual(data.desayuno);
   };
-
+  //Componentes que se inyectan a todo el template
   return (
     <Fragment>
       <Container>
         <Row>
           <Col md={12} lg={8}>
-            <Row className="containerMenu"  >
+            <Row className="containerMenu">
               <MenuItems products={data} onAdd={onAdd} />
             </Row>
           </Col>
-          <Col md={12} lg={4} >
+          <Col md={12} lg={4}>
             <Row>
               <Ordersummary
                 products={data}
@@ -61,8 +63,6 @@ function TableOrders() {
               />
             </Row>
           </Col>
-    
-       
         </Row>
       </Container>
     </Fragment>

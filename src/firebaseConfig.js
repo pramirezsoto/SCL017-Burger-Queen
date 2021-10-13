@@ -1,4 +1,4 @@
-
+//Configuración Firebase
 import firebase from 'firebase/app';
 import 'firebase/firestore';
 
@@ -24,7 +24,7 @@ export {firebase};
 const db = firebase.firestore();
 
 
-
+//Función que guarda los elementos del OrderSummary en la base de datos
 export function savingDataFirebase(billItems){
   db.collection('pedidos').add({
     pedidos: billItems,

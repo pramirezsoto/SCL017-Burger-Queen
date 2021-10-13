@@ -3,10 +3,11 @@ import Button from "@restart/ui/esm/Button";
 import data from '../menu.json'
 
 export default function MenuItems (props) {
+
   console.log(props);
   const {product, onAdd} = props;
  
-
+  //Vistas del menú: desayuno y almuerzo
   const dataDesayuno = data.desayuno;
   console.log(dataDesayuno);
 
@@ -44,11 +45,11 @@ export default function MenuItems (props) {
               alt="..."
             />
             <div className="card-body">
-              <h5 className="card-title">{product.name}</h5>
-              <p className="card-price">${product.price}</p>
+              <h5 className="card-title">{product.name}</h5> {/* Se muestra el nombre del producto desde el Json */}
+              <p className="card-price">${product.price}</p> {/* Se muestra el precio del producto desde el Json */}
 
               <button
-                onClick={() => onAdd(product)}
+                onClick={() => onAdd(product)} /* Función para añadir productos que se trae desde el TableOrders */
                 type="button"
                 className="addToOrder"
               >
